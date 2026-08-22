@@ -1,0 +1,22 @@
+# .gitignore | 22 lines
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+venv/
+*.egg-info/
+
+# Large training-data artifacts — never commit these
+full_tokens.npy
+*.npy
+data/tokenized/
+data/tokenizer/
+
+# Local scratch checkpoints (only the released model.npz should be tracked,
+# and even that is usually better served via Git LFS or a release asset than
+# a raw commit — see README "How to download")
+checkpoints/*.npz
+!checkpoints/.gitkeep
+
+.ipynb_checkpoints/
+.DS_Store

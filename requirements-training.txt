@@ -1,0 +1,13 @@
+# requirements-training.txt | 12 lines
+# OPTIONAL — only needed to re-run the original training notebook
+# (notebooks/DGPT_NanoScratchGPT_FINAL.ipynb) on a CUDA GPU. Not required for inference.
+-r requirements.txt
+cupy-cuda12x       # match to your CUDA toolkit version; see https://docs.cupy.dev/en/stable/install.html
+tqdm
+matplotlib
+pytest              # for tests/test_release.py
+
+# Notes:
+# - The notebook was run on a Kaggle NVIDIA Tesla T4 with CuPy as the CUDA backend.
+# - Training itself (forward, backward, AdamW) is hand-implemented in the notebook;
+#   no ML framework (PyTorch/JAX/TensorFlow) is used for training or inference.

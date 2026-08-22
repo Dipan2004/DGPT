@@ -1,0 +1,4 @@
+# requirements.txt | 4 lines
+# Inference-only dependencies (loading model.npz + bpe_6000.json, generating text).
+# Deliberately excludes CuPy, matplotlib, tqdm and other Kaggle-training-only packages.
+numpy>=1.24

@@ -1,0 +1,30 @@
+{
+  "model_type": "dgpt",
+  "model_name": "DGPT v1-base",
+  "architectures": ["DGPT"],
+  "vocab_size": 6000,
+  "block_size": 256,
+  "d_model": 384,
+  "n_layer": 6,
+  "n_head": 6,
+  "head_dim": 64,
+  "d_ff": 1536,
+  "activation": "gelu_tanh",
+  "norm": "pre_ln",
+  "positional_embedding": "learned",
+  "tie_word_embeddings": true,
+  "lm_head_bias": false,
+  "parameter_count": 13049856,
+  "final_checkpoint_step": 5000,
+  "tokenizer": {
+    "file": "bpe_6000.json",
+    "type": "byte_level_bpe",
+    "vocab_size": 6000,
+    "schema": "bpt_v1"
+  },
+  "generation_defaults": {
+    "temperature": 0.8,
+    "top_k": 40,
+    "max_new_tokens": 200
+  }
+}

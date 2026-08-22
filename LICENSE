@@ -22,13 +22,18 @@ SOFTWARE.
 
 ---
 
-NOTE — this MIT license covers the CODE in this repository only
-(src/, scripts/, tests/, configs/). It does NOT cover:
+NOTICE
 
-  - the trained model weights (checkpoints/model.npz) — see "Licensing" in
-    README.md; this needs your own judgment before you publish/relicense it.
-  - the tokenizer artifact (tokenizer/bpe_6000.json) — see the same section.
-  - the TinyStories dataset the model was trained on, which is distributed
-    separately by its authors under CDLA-Sharing-1.0 — see README.md.
+This MIT license applies to the original source code in this repository,
+including the files under src/, scripts/, tests/, and configs/.
 
-Do not assume this MIT grant extends to those artifacts.
+It does not by itself grant rights to third-party or separately licensed
+artifacts, including:
+
+- trained model weights (checkpoints/model.npz)
+- tokenizer artifact (tokenizer/bpe_6000.json)
+- training datasets and other third-party materials
+
+The licensing and permitted use of these artifacts are governed by their
+respective provenance and applicable licenses. See README.md / MODEL_CARD.md
+for additional information where available.

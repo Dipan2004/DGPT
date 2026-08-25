@@ -113,8 +113,6 @@ exact step-by-step log).
 
 ## Model limitations
 
-Be honest with yourself about what this is:
-
 - **Not instruction-tuned.** It completes text; it does not follow commands
   or answer questions reliably.
 - **Not aligned/chat-tuned.** No RLHF, no DPO, no safety fine-tuning.
